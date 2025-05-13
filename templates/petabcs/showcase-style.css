@@ -1,0 +1,262 @@
+/**
+ * Showcase Layout CSS with large images and pros/cons sections
+ */
+
+/* Base styling */
+.aawp-showcase-layout {
+    margin: 2em 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Title styling */
+.aawp-showcase-layout__title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 1em;
+    color: #333;
+    text-align: center;
+}
+
+/* Introduction text */
+.aawp-showcase-layout__intro {
+    margin-bottom: 2.5em;
+    font-size: 18px;
+}
+
+/* Product container */
+.aawp-showcase-layout__product {
+    margin-bottom: 4em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid #eee;
+}
+
+.aawp-showcase-layout__product:last-child {
+    border-bottom: none;
+}
+
+/* Product heading (Our Top Pick: Product Name) */
+.aawp-showcase-layout__product-heading {
+    font-size: 24px;
+    margin-bottom: 1em;
+    color: #5822B0;
+    padding-bottom: 0.5em;
+    border-bottom: 3px solid rgba(88, 34, 176, 0.1);
+}
+
+/* Large image product box styling */
+.aawp-product--large-image {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Large image container */
+.aawp-product__image-container--large {
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.aawp-product__image--large {
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Content container */
+.aawp-product__content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Product title */
+.aawp-product--large-image .aawp-product__title {
+    font-size: 22px;
+    margin-bottom: 0.75em;
+    color: #5822B0;
+}
+
+/* Product rating */
+.aawp-product--large-image .aawp-product__rating {
+    margin-bottom: 1em;
+}
+
+/* Product pricing */
+.aawp-product--large-image .aawp-product__pricing {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.aawp-product--large-image .aawp-product__price--current {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+}
+
+.aawp-product--large-image .aawp-product__price--old {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 10px;
+}
+
+.aawp-product--large-image .aawp-product__price--saved {
+    color: #5cb85c;
+    margin-left: 10px;
+}
+
+/* Product description */
+.aawp-product--large-image .aawp-product__description {
+    margin: 1em 0;
+    font-size: 16px;
+}
+
+/* Action buttons */
+.aawp-product--large-image .aawp-product__actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 1em;
+}
+
+/* Product analysis section */
+.aawp-showcase-layout__product-analysis {
+    margin-top: 2em;
+}
+
+.aawp-showcase-layout__product-content {
+    margin-bottom: 2em;
+}
+
+/* Pros and Cons section */
+.aawp-showcase-layout__pros-cons {
+    display: flex;
+    gap: 30px;
+    margin: 1.5em 0;
+}
+
+.aawp-product__pros,
+.aawp-product__cons {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.aawp-product__pros {
+    background-color: rgba(92, 184, 92, 0.1);
+    border: 1px solid rgba(92, 184, 92, 0.2);
+}
+
+.aawp-product__cons {
+    background-color: rgba(217, 83, 79, 0.1);
+    border: 1px solid rgba(217, 83, 79, 0.2);
+}
+
+.aawp-product__pros h4,
+.aawp-product__cons h4 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0.75em;
+    text-align: center;
+}
+
+.aawp-product__pros h4 {
+    color: #5cb85c;
+}
+
+.aawp-product__cons h4 {
+    color: #d9534f;
+}
+
+.aawp-product__pros ul,
+.aawp-product__cons ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.aawp-product__pros li,
+.aawp-product__cons li {
+    margin-bottom: 0.5em;
+}
+
+/* Custom blocks */
+.aawp-showcase-layout__custom-block {
+    margin: 2em 0;
+}
+
+.aawp-showcase-layout__custom-block--before-all,
+.aawp-showcase-layout__custom-block--after-all {
+    padding: 1.5em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Comparison table styling */
+.aawp-showcase-layout__custom-block table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+}
+
+.aawp-showcase-layout__custom-block table th {
+    background-color: #5822B0;
+    color: white;
+    text-align: left;
+    padding: 12px;
+}
+
+.aawp-showcase-layout__custom-block table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+.aawp-showcase-layout__custom-block table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Conclusion section */
+.aawp-showcase-layout__conclusion {
+    margin-top: 3em;
+    padding: 1.5em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.aawp-showcase-layout__conclusion h3 {
+    font-size: 22px;
+    margin-bottom: 1em;
+    color: #333;
+}
+
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+    .aawp-product--large-image {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .aawp-product__image-container--large {
+        flex: 0 0 45%;
+        margin-right: 5%;
+        margin-bottom: 0;
+    }
+    
+    .aawp-product__content-container {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .aawp-showcase-layout__pros-cons {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .aawp-product__image--large {
+        max-width: 100%;
+    }
+}
