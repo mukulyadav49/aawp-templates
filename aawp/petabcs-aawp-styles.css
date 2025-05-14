@@ -1,0 +1,129 @@
+/* Custom styles for PetABCs AAWP templates */
+
+/* Maintain existing styles */
+.aawp-producttitle {
+    color: #5822B0;
+}
+
+.aawp .aawp-product--vertical .aawp-productcontent {
+    min-height: 0px;
+}
+
+/* Target the price container */
+.aawp-product__pricing {
+    display: flex !important;
+    justify-content: flex-start !important;
+    margin-bottom: 10px;
+}
+
+/* Also target the actual price span */
+.aawp-productprice, .aawp-productprice--current {
+    text-align: left !important;
+    float: left !important;
+}
+
+/* Style the buy button - all states */
+.aawp-button.aawp-button--buy, 
+.aawp-button.aawp-button--buy:link, 
+.aawp-button.aawp-button--buy:visited, 
+.aawp-button.aawp-button--buy:active {
+    background-color: #5822B0 !important;
+    color: white !important;
+    border-color: #5822B0 !important;
+}
+
+/* Make sure hover states also use the same colors */
+.aawp-button.aawp-button--buy:hover {
+    background-color: #4a1d93 !important;
+    color: white !important;
+    border-color: #4a1d93 !important;
+}
+
+/* Top Pick Template Styles */
+.aawp-product--top-pick {
+    border: 2px solid #5822B0;
+    padding: 25px;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-color: #f8f5ff;
+}
+
+.aawp-top-pick-badge {
+    background-color: #5822B0;
+    color: white;
+    padding: 5px 15px;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.aawp-top-pick-subtext {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 15px;
+    padding-top: 5px;
+}
+
+/* Standard Pick Template Styles */
+.aawp-product--standard-pick {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+}
+
+/* Common styles for both templates */
+.aawp-product--top-pick .aawp-product__image,
+.aawp-product--standard-pick .aawp-product__image {
+    display: block;
+    margin: 15px auto;
+    max-width: 300px;
+}
+
+.aawp-product--top-pick .aawp-product__image--link,
+.aawp-product--standard-pick .aawp-product__image--link {
+    display: block;
+    text-align: center;
+}
+
+.aawp-product--top-pick .aawp-product__title,
+.aawp-product--standard-pick .aawp-product__title {
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    color: #5822B0;
+    display: block;
+}
+
+.aawp-product--top-pick .aawp-product__description,
+.aawp-product--standard-pick .aawp-product__description {
+    margin: 15px 0;
+}
+
+.aawp-product--top-pick .aawp-product__pricing,
+.aawp-product--standard-pick .aawp-product__pricing {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.aawp-product--top-pick .aawp-product__price,
+.aawp-product--standard-pick .aawp-product__price {
+    text-align: center !important;
+    float: none !important;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.aawp-product--top-pick .aawp-product__cta,
+.aawp-product--standard-pick .aawp-product__cta {
+    text-align: center;
+}
