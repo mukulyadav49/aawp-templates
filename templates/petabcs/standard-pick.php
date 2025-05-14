@@ -9,9 +9,11 @@ if ( ! defined( 'ABSPATH' ) ) {
     die( '-1' );
 }
 
+// Get the current ASIN to create a unique ID for this product
+$asin = $this->get_product_id();
 ?>
 
-<div class="<?php echo $this->get_product_container_classes('aawp-product aawp-product--standard-pick'); ?>" <?php $this->the_product_container(); ?>>
+<div class="<?php echo $this->get_product_container_classes('aawp-product aawp-product--standard-pick'); ?>" <?php $this->the_product_container(); ?> id="aawp-product-<?php echo esc_attr($asin); ?>">
 
     <?php $this->the_product_ribbons(); ?>
 
@@ -25,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="aawp-product__image-wrap">
             <a class="aawp-product__image--link"
             href="<?php echo $this->get_product_image_link(); ?>" title="<?php echo $this->get_product_image_link_title(); ?>" rel="nofollow noopener sponsored" target="_blank">
-                <img class="aawp-product__image" src="<?php echo $this->get_product_image('medium'); ?>" alt="<?php echo $this->get_product_image_alt(); ?>" <?php $this->the_product_image_title(); ?> />
+                <img class="aawp-product__image" src="<?php echo $this->get_product_image(); ?>" alt="<?php echo $this->get_product_image_alt(); ?>" <?php $this->the_product_image_title(); ?> />
             </a>
         </div>
 
@@ -49,6 +51,9 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="aawp-product__cta">
             <?php echo $this->get_button(); ?>
         </div>
+
+        <!-- 6. Custom Content Container (Empty at first, filled by JavaScript) -->
+        <div id="product-content-<?php echo esc_attr($asin); ?>" class="aawp-product__custom-content"></div>
 
         <?php if ( $this->get_product_rating() ) { ?>
             <div class="aawp-product__meta">
