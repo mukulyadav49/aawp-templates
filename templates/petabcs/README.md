@@ -5,7 +5,24 @@ This directory contains custom AAWP templates for displaying products in two dif
 ## Templates
 
 1. **Top Pick** (`top-pick.php`): A highlighted box with "Our Top Pick" badge and product details
-2. **Standard Pick** (`standard-pick.php`): A standard product display with centered elements
+2. **Standard Pick** (`standard-pick.php`): A standard product display
+
+## Layout Structure
+
+### Top Pick Layout:
+1. Product Title (Aligned Left)
+2. Product Image (Aligned center)
+3. Text aligned center - "After careful testing and research, this product stood out as our top recommendation."
+4. Bullet points
+5. Price (Aligned Left)
+6. CTA (Aligned Left)
+
+### Standard Pick Layout:
+1. Product Title (Aligned Left)
+2. Product Image (Aligned center)
+3. Bullet points
+4. Price (Aligned Left)
+5. CTA (Aligned Left)
 
 ## Usage
 
@@ -41,11 +58,3 @@ Replace `ASIN` with the Amazon product's ASIN code.
      }
      add_action('wp_enqueue_scripts', 'enqueue_aawp_custom_css');
      ```
-
-## Features
-
-- Centered product images and titles
-- Bullet-point product descriptions
-- Bold prices
-- Centered call-to-action buttons
-- Maintains original CSS color scheme (#5822B0)

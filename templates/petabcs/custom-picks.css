@@ -1,13 +1,16 @@
 /**
- * Custom CSS for AAWP Top Pick and Standard Pick Templates
+ * Custom SEO-Friendly AAWP CSS for PetABCs
+ *
+ * This CSS preserves your current styling while adding new styles
+ * for the SEO-friendly template structure.
  */
 
-/* Keep original CSS */
-.aawp-producttitle {
+/* Your existing custom CSS */
+.aawp-product__title {
     color: #5822B0;
 }
 
-.aawp .aawp-product--vertical .aawp-productcontent {
+.aawp .aawp-product--vertical .aawp-product__content {
     min-height: 0px;
 }
 
@@ -19,7 +22,7 @@
 }
 
 /* Also target the actual price span */
-.aawp-productprice, .aawp-productprice--current {
+.aawp-product__price, .aawp-product__price--current {
     text-align: left !important;
     float: left !important;
 }
@@ -64,14 +67,6 @@
     z-index: 10;
 }
 
-.aawp-product__ribbon-text {
-    font-style: italic;
-    margin-bottom: 15px;
-    color: #333;
-    text-align: center;
-    padding-top: 15px;
-}
-
 /* Standard Pick Template Styles */
 .aawp-product.aawp-product--standard-pick {
     padding: 20px;
@@ -87,17 +82,16 @@
     display: block;
     font-size: 1.2em;
     font-weight: bold;
-    text-align: center;
-    margin: 10px 0 15px 0;
+    text-align: left;
+    margin: 0 0 15px 0;
     color: #5822B0;
     text-decoration: none;
 }
 
-.aawp-product--top-pick .aawp-product__image--link,
-.aawp-product--standard-pick .aawp-product__image--link {
-    display: block;
+.aawp-product--top-pick .aawp-product__image-wrap,
+.aawp-product--standard-pick .aawp-product__image-wrap {
     text-align: center;
-    margin: 0 auto;
+    margin: 0 0 20px 0;
 }
 
 .aawp-product--top-pick .aawp-product__image,
@@ -108,35 +102,23 @@
     height: auto;
 }
 
-.aawp-product--top-pick .aawp-product__content,
-.aawp-product--standard-pick .aawp-product__content {
+.aawp-product--top-pick .aawp-product__ribbon-text {
+    font-style: italic;
+    margin: 0 0 20px 0;
+    color: #333;
     text-align: center;
 }
 
 .aawp-product--top-pick .aawp-product__description,
 .aawp-product--standard-pick .aawp-product__description {
-    margin: 15px 0;
+    margin: 0 0 20px 0;
     text-align: left;
-    display: inline-block;
-}
-
-.aawp-product--top-pick .aawp-product__meta,
-.aawp-product--standard-pick .aawp-product__meta {
-    text-align: center;
-    margin: 10px 0;
-}
-
-.aawp-product--top-pick .aawp-product__footer,
-.aawp-product--standard-pick .aawp-product__footer {
-    text-align: center;
 }
 
 .aawp-product--top-pick .aawp-product__pricing,
 .aawp-product--standard-pick .aawp-product__pricing {
-    margin: 15px 0;
-    display: flex;
-    justify-content: center !important;
-    font-weight: bold;
+    margin: 0 0 15px 0;
+    text-align: left;
 }
 
 .aawp-product--top-pick .aawp-product__price,
@@ -147,6 +129,12 @@
 
 .aawp-product--top-pick .aawp-product__cta,
 .aawp-product--standard-pick .aawp-product__cta {
-    text-align: center;
-    margin-top: 15px;
+    text-align: left;
+    margin: 0 0 15px 0;
+}
+
+.aawp-product--top-pick .aawp-product__meta,
+.aawp-product--standard-pick .aawp-product__meta {
+    text-align: left;
+    margin: 10px 0;
 }
